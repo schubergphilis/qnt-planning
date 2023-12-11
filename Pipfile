@@ -8,6 +8,8 @@ qiskit-algorithms = "*"
 numpy = "*"
 matplotlib = "*"
 pandas = "*"
+jupyter = "*"
+pulp = "*"
 
 [dev-packages]
 ipykernel = "*"
