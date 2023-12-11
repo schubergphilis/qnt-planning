@@ -25,7 +25,7 @@ jobs:
         run: pip install pipenv
 
       - name: Install quality tools
-        run: pip install --categories quality
+        run: pipenv install --categories quality
 
       - name: nblint
         run: pipenv run nblint
