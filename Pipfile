@@ -1,0 +1,41 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+qiskit-algorithms = "*"
+numpy = "*"
+matplotlib = "*"
+pandas = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.8"
+
+[ibm-backend]
+qiskit-ibm-runtime = "*"
+python-dotenv = "*"
+
+[aws-backend]
+qiskit-braket-provider = "*"
+boto3 = "*"
+python-dotenv = "*"
+
+[inspire-backend]
+coreapi = "*"
+quantuminspire = "*"
+projectq = "*"
+python-dotenv = "*"
+
+[quality]
+pynblint = "*"
+nbqa = {extras = ["toolchain"], version = "*"}
+
+[scripts]
+isort = "nbqa isort ./"
+nblint = "pynblint ./planning.ipynb -S"
+ruff = "nbqa ruff --extend-ignore=E402 ./"

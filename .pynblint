@@ -1,0 +1,1 @@
+EXCLUDE=["imports-beyond-first-cell", "cell-too-long", "notebook-too-long", "missing-closing-MD-text", "non-executed-cells"]
