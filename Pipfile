@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+qiskit = "*"
 qiskit-algorithms = "*"
 numpy = "*"
 matplotlib = "*"
@@ -36,6 +37,7 @@ python-dotenv = "*"
 [quality]
 pynblint = "*"
 nbqa = {extras = ["toolchain"], version = "*"}
+pexpect = "*"
 
 [scripts]
 isort = "nbqa isort ./"
