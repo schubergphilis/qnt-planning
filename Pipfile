@@ -28,14 +28,15 @@ python-dotenv = "*"
 [inspire-backend]
 coreapi = "*"
 quantuminspire = "*"
-projectq = "*"
 python-dotenv = "*"
 
 [quality]
 pynblint = "*"
 nbqa = {extras = ["toolchain"], version = "*"}
+stack-data = "*"
+exceptiongroup = "*"
 
 [scripts]
 isort = "nbqa isort ./"
-nblint = "pynblint ./planning.ipynb -S"
 ruff = "nbqa ruff --extend-ignore=E402 ./"
+nblint = "pynblint ./planning.ipynb -S"
