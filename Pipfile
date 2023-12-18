@@ -34,7 +34,7 @@ python-dotenv = "*"
 
 [quality]
 pynblint = "*"
-nbqa = {extras = ["toolchain"], version = "*"}
+nbqa = {extras = ["toolchain"], version = "~=1.7.1"}
 stack-data = "*"
 exceptiongroup = "*"
 
