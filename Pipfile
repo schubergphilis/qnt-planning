@@ -4,15 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-qiskit = "*"
-qiskit-algorithms = "*"
-numpy = "*"
-matplotlib = "*"
-pandas = "*"
-pulp = "*"
+qiskit = "~=0.45.1"
+qiskit-algorithms = "~=0.2.1"
+numpy = ">=1.17"
+matplotlib = ">=0.1"
+pandas = "~=2.1.4"
+pulp = "~=2.7.0"
 
 [dev-packages]
-ipykernel = "*"
+ipykernel = ">=4.1"
 
 [requires]
 python_version = "3.10"
