@@ -4,15 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-qiskit = "~=0.45.1"
-qiskit-algorithms = "~=0.2.1"
-numpy = ">=1.17"
-matplotlib = ">=0.1"
-pandas = "~=2.1.4"
-pulp = "~=2.7.0"
+qiskit = "*"
+qiskit-algorithms = "*"
+numpy = "*"
+matplotlib = "*"
+pandas = "*"
+ipython = "*"
+pulp = "*"
 
 [dev-packages]
-ipykernel = ">=4.1"
+ipykernel = "*"
 
 [requires]
 python_version = "3.10"
@@ -34,11 +35,11 @@ python-dotenv = "*"
 
 [quality]
 pynblint = "*"
-nbqa = {extras = ["toolchain"], version = "~=1.7.1"}
+nbqa = {extras = ["toolchain"], version = "*"}
 stack-data = "*"
 exceptiongroup = "*"
 
 [scripts]
 isort = "nbqa isort ./"
-ruff = "nbqa ruff --extend-ignore=E402 ./"
+ruff = "nbqa ruff ./"
 nblint = "pynblint ./planning.ipynb -S"
