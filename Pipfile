@@ -4,10 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+qiskit = "*"
 qiskit-algorithms = "*"
 numpy = "*"
 matplotlib = "*"
 pandas = "*"
+ipython = "*"
+pulp = "*"
 
 [dev-packages]
 ipykernel = "*"
@@ -28,14 +31,15 @@ python-dotenv = "*"
 [inspire-backend]
 coreapi = "*"
 quantuminspire = "*"
-projectq = "*"
 python-dotenv = "*"
 
 [quality]
 pynblint = "*"
 nbqa = {extras = ["toolchain"], version = "*"}
+stack-data = "*"
+exceptiongroup = "*"
 
 [scripts]
 isort = "nbqa isort ./"
+ruff = "nbqa ruff ./"
 nblint = "pynblint ./planning.ipynb -S"
-ruff = "nbqa ruff --extend-ignore=E402 ./"
